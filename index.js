@@ -25,7 +25,6 @@ async function renderMenuUtama() {
 	if (menu.aksi === "Input jajaner") await tampilkanFormMenu("jajaners");
 	if (menu.aksi === "Input penambahan") await tampilkanFormMenu("penambahan");
 	if (menu.aksi === "Input pengurangan") await tampilkanFormMenu("pengurangan");
-	if (menu.aksi === "Input pengurangan") await tampilkanFormMenu("pengurangan");
 	if (menu.aksi === "Input judul") await tampilkanFormJudul();
 	if (menu.aksi === "Reset") initUlang();
 	if (menu.aksi === "Bye-bye") process.exit();
