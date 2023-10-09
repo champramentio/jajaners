@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "nexe index.js -t win32-x86-10.13.0"
 	},
 	"keywords": [],
 	"author": "",
@@ -15,6 +15,6 @@
 		"table": "^6.8.1"
 	},
 	"devDependencies": {
-		"caxa": "^3.0.1"
+		"nexe": "^4.0.0-rc.2"
 	}
 }
