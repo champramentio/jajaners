@@ -105,7 +105,11 @@ async function tampilkanFormMenu(variable) {
 
 	const hasil = await inquirer.prompt(questions);
 	hasil.nominal = +hasil.nominal;
-	info[variable].push(hasil);
+
+	//jika ada yang sama nama nya, diakumulasikan nominal nya
+	const found = info[variable].find(x => x.nama === hasil.nama);
+	if (found) found.nominal += hasil.nominal;
+	else info[variable].push(hasil);
 }
 
 async function tampilkanFormJudul() {
